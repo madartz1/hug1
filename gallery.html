@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>HUGS Neon Art Gallery</title>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="assets/hugslinks-graffiti.png">
+  </a>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="upload-art.html">Upload</a>
+    <a href="links.html">Transparency</a>
+  </nav>
+
+  <a href="purchase.html" class="wallet-btn">Join</a>
+</header>
+
+<main>
+
+<section class="fine-gallery-hero">
+  <h1>HUGS Gallery</h1>
+  <p>Experience community artwork in a neon digital gallery</p>
+</section>
+
+<section class="gallery-wall">
+
+  <article class="art-piece large" data-title="Community Light" data-artist="HUGS Creator">
+    <img src="assets/sample-art-1.jpg">
+
+    <div class="vote-actions">
+      <button class="vote-btn thumbs-up">👍</button>
+      <span class="vote-count">0</span>
+      <button class="vote-btn thumbs-down">👎</button>
+    </div>
+
+    <div class="art-caption">
+      <h3>Community Light</h3>
+      <p>HUGS Creator</p>
+    </div>
+  </article>
+
+  <article class="art-piece">
+    <div class="art-placeholder">Upload Art</div>
+
+    <div class="vote-actions">
+      <button class="vote-btn thumbs-up">👍</button>
+      <span class="vote-count">0</span>
+      <button class="vote-btn thumbs-down">👎</button>
+    </div>
+
+    <div class="art-caption">
+      <h3>Next Submission</h3>
+      <p>Pending</p>
+    </div>
+  </article>
+
+</section>
+
+</main>
+
+<div class="art-modal" id="artModal">
+  <img id="modalImg">
+  <div class="modal-info">
+    <h2 id="modalTitle"></h2>
+    <p id="modalArtist"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
