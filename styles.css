@@ -29,3 +29,39 @@ footer{background:var(--beige);padding:40px 0;text-align:center;margin-top:60px}
 input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--outline);margin-bottom:15px}
 button{background:var(--hugs-red);color:white;padding:12px 22px;border:none;border-radius:25px;cursor:pointer}
 button:hover{background:var(--hugs-red-dark)}
+.vote-actions{
+  position:absolute;
+  top:20px;
+  right:20px;
+  display:flex;
+  gap:6px;
+  background:rgba(0,0,0,.6);
+  padding:8px;
+  border-radius:999px;
+}
+
+.vote-btn{
+  background:rgba(255,255,255,.1);
+  border:none;
+  color:white;
+  padding:6px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.vote-count{
+  color:#00e5ff;
+  font-weight:bold;
+}
+
+.floating-heart{
+  position:fixed;
+  font-size:20px;
+  animation:floatUp 2.5s ease-out forwards;
+  pointer-events:none;
+}
+
+@keyframes floatUp{
+  0%{opacity:1; transform:translateY(0)}
+  100%{opacity:0; transform:translateY(-120px)}
+}
